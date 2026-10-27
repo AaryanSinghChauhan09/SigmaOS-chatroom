@@ -1,15 +1,39 @@
-# SigmaOS-chatroom
+    # SigmaOS-chatroom
 
-Part of the SigmaOS multi-repository architecture.
+    LAN chat server & client
 
-## Principles
-- MODULARITY: Single responsibility per repository
-- LOOSE COUPLING: Minimal dependencies between repos
-- INTERFACE SEGREGATION: Clear, focused public APIs
-- DETERMINISTIC TESTING: Comprehensive test coverage
+    Part of the **SigmaOS** sovereign operating-system ecosystem — a multi-repository
+    distribution modelled on Linux Mint and Omarchy Linux. See the parent
+    [`SigmaOS`](https://github.com/AaryanSinghChauhan09/SigmaOS) repository for the
+    full component index.
 
-## License
-SPDX-License-Identifier: GPL-3.0-or-later
+    ## Upstream inspirations
+    - https://github.com/linuxmint/jargonaut
 
-## Copyright
-Copyright (C) 2026 SigmaOS Project
+    ## Design principles applied
+    - **Abstraction**
+- **Separation of Concerns**
+- **Fail-Fast**
+- **KISS**
+- **Deterministic Testing**
+- **Information Hiding**
+
+    ## Usage
+    Verbs: `serve-plan, rooms, users, broadcast-plan`
+
+    ```
+    $ sigma-chat serve-plan --port 6667
+$ sigma-chat rooms
+$ sigma-chat users
+$ sigma-chat broadcast-plan --user alice --text "hello" --kind room
+
+    ```
+
+    ## Build & test
+    ```
+    make build
+    make test
+    ```
+
+    ## Licence
+    GNU General Public License v3.0 (FOSS).
