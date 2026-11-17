@@ -1,6 +1,6 @@
 [component]
 name = "SigmaOS-chatroom"
-description = "SigmaOS subsystem component for chatroom"
+description = "LAN chat server & client"
 version = "0.1.0"
 tier = 5
 
